@@ -1,0 +1,7 @@
+<div *ngFor="let producto of productos; let indice = index">
+    <h4>Nombre: {{producto.nombre}}</h4>
+    <p>Cantidad: {{producto.cantidad}}</p>
+    <p>Departamento: {{producto.departamento}}</p>
+    <button (click)="onClick(indice)">{{textoBoton}}</button>
+    <br>
+</div>
